@@ -233,6 +233,11 @@ body {
   color: #ffffff;
 }
 
+.btn-projects:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
 .team-title {
   font-family: "Roboto";
   font-weight: 700;
