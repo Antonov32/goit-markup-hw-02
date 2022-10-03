@@ -220,8 +220,38 @@ body {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62px;
-  text-align: center;
+  line-height: 1.62;
   letter-spacing: 0.03em;
   color: #212121;
+}
+.btn-projects {
+  background-color: #f5f4fa;
+}
+
+.btn-projects:hover {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.team-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.team-image {
+  background-color: #ffffff;
+}
+
+.team-category {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88px;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
