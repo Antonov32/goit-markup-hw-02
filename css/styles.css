@@ -4,14 +4,11 @@
   --accent-color: #2196f3;
   --logo-color: #000000;
   --background-color: #ffffff;
-  --background-color-header: #ececec;
-  --background-color-hero: #2f303a;
-  --background-color-portfolio: #f5f5f5;
-  --background-color-command: #f5f4fa;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }
 
 .list {
@@ -23,17 +20,15 @@ body {
 }
 
 .section-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-color);
 }
 
 .section-logo {
   font-family: "Raleway";
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
@@ -44,162 +39,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
-/* Шапка сайту */
-
-.header {
-  background-color: #ececec;
-}
-
-.header {
-  background-color: #ececec;
-}
-
-.logo {
-  color: #000000;
-}
-
-.logo-style {
-  color: #2196f3;
-}
-
-.header-item {
-  color: #212121;
-}
-
-.header-list .header-item:hover {
-  color: #2196f3;
-}
-
-.header-list .header-item:focus {
-  color: #2196f3;
-}
-
-.header-list .header-item.current {
-  color: #2196f3;
-}
-
-.header-contacts {
-  color: #757575;
-}
-
-.header-link .header-contacts:hover {
-  color: #2196f3;
-}
-
-.header-link .header-contacts:focus {
-  color: #2196f3;
-}
-
-/* Герой */
-
-.hero {
-  background-color: #2f303a;
-}
-.hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-.hero-btn {
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-}
-
-/* Переваги */
-
-.advantages-item {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-}
-.advantages-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-/* Чим займається компанія */
-
-.projects-title {
-  font-family: inherit;
-}
-
-/* Наша команда */
-
-.command {
-  background-color: #f5f4fa;
-}
-
-.command-title {
-  font-family: inherit;
-}
-
-.command-people {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
-.command-position {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-/* Підвал */
-.basement {
-  background-color: #2f303a;
-}
-
-.basement-logo {
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
-
-.basement-list {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
-.link-google {
-  color: #ffffff;
-}
-
-.basement-malito,
-.basement-tel {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-/* Portfolio.html */
 
 .visually-hidden {
   position: absolute;
@@ -214,44 +53,164 @@ body {
   margin: -1px;
 }
 
+/* Шапка сайту */
+
+.header {
+  background-color: #ececec;
+}
+
+.logo {
+  color: var(--logo-color);
+}
+
+.logo-style {
+  color: var(--accent-color);
+}
+
+.nav-link {
+  color: var(--primary-color);
+}
+
+.header-list .nav-link:hover,
+.header-list .nav-link:focus,
+.header-list .nav-link.current {
+  color: var(--accent-color);
+}
+
+.contacts-link {
+  color: var(--secondary-color);
+}
+
+.header-link .contacts-link:hover,
+.header-link .contacts-link:focus {
+  color: var(--accent-color);
+}
+
+/* Герой */
+
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--background-color);
+}
+
+.hero-btn {
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--background-color);
+}
+
+/* Переваги */
+
+.advantages-item {
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.advantages-text {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
+/* Наша команда */
+
+.command {
+  background-color: #f5f4fa;
+}
+
+.command-people {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-color);
+}
+
+.command-position {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
+/* Підвал */
+.basement {
+  background-color: #2f303a;
+}
+
+.basement-logo {
+  letter-spacing: 0.03em;
+  color: var(--background-color);
+}
+
+.link-google {
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--background-color);
+}
+
+.basement-contacts {
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Portfolio.html */
+
 .projects-list {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-color);
 }
 .btn-projects {
+  cursor: pointer;
   background-color: #f5f4fa;
 }
 
-.btn-projects:hover {
-  background-color: #2196f3;
-  color: #ffffff;
-}
-
+.btn-projects:hover,
 .btn-projects:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--background-color);
 }
 
 .team-title {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var();
 }
 
 .team-image {
-  background-color: #ffffff;
+  background-color: var(--background-color);
 }
 
 .team-category {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color);
 }
