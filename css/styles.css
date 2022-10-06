@@ -214,3 +214,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
+
+.basement-contacts:hover,
+.basement-contacts:focus {
+  color: var(--accent-color);
+}
